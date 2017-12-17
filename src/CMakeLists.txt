@@ -9,12 +9,12 @@ SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "")
 
 SET(SOURCES
         main.c
-)
+        doing_ubs.c doing_ubus.h)
 
 SET(LIBS
         ubox ubus json-c blobmsg_json)
 
-ADD_EXECUTABLE(doing ${SOURCES})
+ADD_EXECUTABLE(doing ${SOURCES} doing_ubs.c doing_ubus.h)
 
 TARGET_LINK_LIBRARIES(doing ${LIBS})
 

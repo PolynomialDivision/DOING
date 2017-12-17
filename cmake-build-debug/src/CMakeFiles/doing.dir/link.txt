@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/doing.dir/main.c.o CMakeFiles/doing.dir/doing_ubs.c.o  -o doing -lubox -lubus -ljson-c -lblobmsg_json 
